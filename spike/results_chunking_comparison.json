@@ -1,0 +1,26 @@
+{
+  "config": {
+    "target_size": 120,
+    "overlap_fixed_only": 20,
+    "top_k": 5
+  },
+  "fixed": {
+    "total_chunks": 41,
+    "avg_tokens_per_chunk": 99.2,
+    "ingest_ms": 857.4,
+    "hits": 10,
+    "total": 10,
+    "hit_rate": 100.0,
+    "avg_query_latency_ms": 12.3
+  },
+  "recursive": {
+    "total_chunks": 40,
+    "avg_tokens_per_chunk": 86.0,
+    "ingest_ms": 478.4,
+    "hits": 10,
+    "total": 10,
+    "hit_rate": 100.0,
+    "avg_query_latency_ms": 8.9
+  },
+  "verdict": "Tie on hit-rate \u2014 use chunk count / latency as tie-breaker."
+}
