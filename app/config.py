@@ -11,7 +11,7 @@ HF_MODEL = "google/flan-t5-large"   # fallback if USE_OLLAMA is False
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 # ---- RETRIEVAL & CHUNKING ----
-CHUNK_SIZE = 512
+CHUNK_SIZE = 256
 CHUNK_OVERLAP = 50
 TOP_K = 12                          # increased for better recall
 

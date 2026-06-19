@@ -1,7 +1,7 @@
 # Technical Design Document
 ## Northwind Support Copilot — v1
 
-**Author:** [Your Name]  
+**Author:** Vishal Kumar Pagadala
 **Date:** June 2025  
 **Status:** Draft  
 **Version:** 1.0

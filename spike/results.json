@@ -1,0 +1,163 @@
+{
+  "config": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "top_k": 5,
+    "embed_model": "all-MiniLM-L6-v2"
+  },
+  "hit_rate": 100.0,
+  "hits": 10,
+  "total": 10,
+  "results": [
+    {
+      "q_num": 1,
+      "question": "What is the refund policy for annual subscriptions?",
+      "expected_source": "refund_policy.md",
+      "retrieved_sources": [
+        "refund_policy.md",
+        "data_retention_policy.md",
+        "billing_faq.md",
+        "pricing_and_plans.md",
+        "admin_guide.md"
+      ],
+      "top_chunk_preview": "# Northwind Refund Policy\n\nLast updated: January 2025\n\n## Overview\nNorthwind offers refunds under the conditions described in this document.\nAll refun...",
+      "hit": true,
+      "notes": "Core policy \u2014 agents ask this daily"
+    },
+    {
+      "q_num": 2,
+      "question": "How long does a refund take to appear on a credit card?",
+      "expected_source": "refund_policy.md",
+      "retrieved_sources": [
+        "refund_policy.md",
+        "billing_faq.md",
+        "data_retention_policy.md",
+        "admin_guide.md",
+        "data_export_guide.md"
+      ],
+      "top_chunk_preview": "# Northwind Refund Policy\n\nLast updated: January 2025\n\n## Overview\nNorthwind offers refunds under the conditions described in this document.\nAll refun...",
+      "hit": true,
+      "notes": "Same doc, different angle \u2014 tests within-doc recall"
+    },
+    {
+      "q_num": 3,
+      "question": "How do I reset a user password in the admin panel?",
+      "expected_source": "admin_guide.md",
+      "retrieved_sources": [
+        "admin_guide.md",
+        "user_management.md",
+        "data_retention_policy.md",
+        "billing_faq.md",
+        "data_export_guide.md"
+      ],
+      "top_chunk_preview": "# Administrator Guide\n\nLast updated: January 2025\n\n## Overview\nThis guide covers common administrative tasks in the Northwind platform.\nAdmin access i...",
+      "hit": true,
+      "notes": "Common procedural question"
+    },
+    {
+      "q_num": 4,
+      "question": "What happens to customer data when an account is cancelled?",
+      "expected_source": "data_retention_policy.md",
+      "retrieved_sources": [
+        "data_retention_policy.md",
+        "admin_guide.md",
+        "refund_policy.md",
+        "billing_faq.md",
+        "data_export_guide.md"
+      ],
+      "top_chunk_preview": "# Data Retention and Deletion Policy\n\nLast updated: January 2025\n\n## What Happens to Customer Data When an Account is Cancelled\n\nWhen a customer cance...",
+      "hit": true,
+      "notes": "Privacy / policy retrieval"
+    },
+    {
+      "q_num": 5,
+      "question": "Which integrations are available on the Pro plan?",
+      "expected_source": "pricing_and_plans.md",
+      "retrieved_sources": [
+        "pricing_and_plans.md",
+        "support_sla.md",
+        "system_requirements.md",
+        "user_management.md",
+        "billing_faq.md"
+      ],
+      "top_chunk_preview": "# Northwind Pricing and Plans\n\nLast updated: January 2025\n\n## Plan Overview\n\n### Starter Plan \u2014 $99/month\n- Up to 5 users\n- Core product features\n- Em...",
+      "hit": true,
+      "notes": "Plan feature lookup"
+    },
+    {
+      "q_num": 6,
+      "question": "How do I export all data before cancelling my account?",
+      "expected_source": "data_export_guide.md",
+      "retrieved_sources": [
+        "data_export_guide.md",
+        "data_retention_policy.md",
+        "admin_guide.md",
+        "billing_faq.md",
+        "refund_policy.md"
+      ],
+      "top_chunk_preview": "# Data Export Guide\n\nLast updated: January 2025\n\n## How to Export Your Data from Northwind\n\nNorthwind allows customers to export all their data at any...",
+      "hit": true,
+      "notes": "Procedural \u2014 export workflow"
+    },
+    {
+      "q_num": 7,
+      "question": "What is the SLA for a critical priority support ticket?",
+      "expected_source": "support_sla.md",
+      "retrieved_sources": [
+        "support_sla.md",
+        "pricing_and_plans.md",
+        "data_retention_policy.md",
+        "billing_faq.md",
+        "user_management.md"
+      ],
+      "top_chunk_preview": "# Support SLA and Response Times\n\nLast updated: January 2025\n\n## Support Tiers and SLA Targets\n\n### Priority Levels\nNorthwind classifies support ticke...",
+      "hit": true,
+      "notes": "SLA policy retrieval"
+    },
+    {
+      "q_num": 8,
+      "question": "Can a customer switch from annual to monthly billing mid-cycle?",
+      "expected_source": "billing_faq.md",
+      "retrieved_sources": [
+        "billing_faq.md",
+        "pricing_and_plans.md",
+        "data_retention_policy.md",
+        "support_sla.md",
+        "user_management.md"
+      ],
+      "top_chunk_preview": "# Billing FAQ\n\nLast updated: January 2025\n\n## Can I switch from annual to monthly billing mid-cycle?\nNo. Switching from annual to monthly billing is o...",
+      "hit": true,
+      "notes": "Edge-case billing question"
+    },
+    {
+      "q_num": 9,
+      "question": "How do I add a new team member to an existing workspace?",
+      "expected_source": "user_management.md",
+      "retrieved_sources": [
+        "user_management.md",
+        "admin_guide.md",
+        "data_export_guide.md",
+        "api_documentation.md",
+        "billing_faq.md"
+      ],
+      "top_chunk_preview": "# User Management Guide\n\nLast updated: January 2025\n\n## Adding a New Team Member to an Existing Workspace\n\n### Step-by-step instructions\n1. Log in to ...",
+      "hit": true,
+      "notes": "User management procedural"
+    },
+    {
+      "q_num": 10,
+      "question": "What are the minimum system requirements for the desktop app?",
+      "expected_source": "system_requirements.md",
+      "retrieved_sources": [
+        "system_requirements.md",
+        "pricing_and_plans.md",
+        "user_management.md",
+        "support_sla.md",
+        "api_documentation.md"
+      ],
+      "top_chunk_preview": "# System Requirements\n\nLast updated: January 2025\n\n## Web Application\nThe Northwind web application runs in all modern browsers. Supported browsers:\n-...",
+      "hit": true,
+      "notes": "Technical spec retrieval"
+    }
+  ]
+}

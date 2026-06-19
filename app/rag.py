@@ -40,7 +40,7 @@ Answer:"""
     # System instruction – force abstention
     system = """You are a support copilot. You must answer using only the context provided.
 If the answer is not explicitly stated in the context, respond with exactly "I don't know" and nothing else.
-Do not add any extra information or elaboration.
+Do not add any extra information or elaboration.think step‑by‑step
 If you do use the context, cite the source number like [Source 1]."""
 
     llm = get_llm()
